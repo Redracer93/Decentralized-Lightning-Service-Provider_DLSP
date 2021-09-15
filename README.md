@@ -19,3 +19,15 @@ The token economy allows Lightning Oracles to earn fees for providing validation
 
 ![image](https://user-images.githubusercontent.com/66779466/133470798-81f4ac72-feb0-4a63-aa64-70c32aed300e.png)
 
+
+## Prerequisite For Lightning Oracle
+
+The following prerequisites and requirements must be satisfied in order to install and run a Lightning Oracle successfully. The oracle service will not proceed/run until all prerequisites are set up.
+
+      1. Bitcoin Daemon Node (BTC)
+            For more details: https://github.com/bitcoin/bitcoin
+      2. Lightning Network Daemon (LND)
+            For more details:  https://github.com/
+      3. Ethereum Blockchain
+            You can use your own or report RPC providers like Alchemy or Infura.
+            For more details: https://docs.alchemy.com/alchemy/ or https://infura.io/docs 

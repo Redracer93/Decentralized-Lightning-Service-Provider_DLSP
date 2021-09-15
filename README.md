@@ -8,3 +8,11 @@
 <br/>
 
 ## Overview
+<br/>
+Lightning Oracles serve as a chain link to connect lightning nodes to the Dapp. In the broadest sense, these proprietary oracles work like lighthouses highlighting key data of payment channels and allowing for navigation across chains. They record payment channel capacity while optionally providing data privacy.
+
+Simply put, Lightning Oracles validate transaction data to ensure connectivity and liquidity when interacting with the Bitcoin Lightning Network and the Ethereum blockchain.
+
+The token economy allows Lightning Oracles to earn fees for providing validation services. To incentivize early adopters, participating nodes earn higher rewards during the experimental phase in the beginnings of the Dapp. Once critical mass has been reached, rewards adjust proportionally. As a guiding principle, Lightning Oracles earn higher rewards than Plenny Whalers (PWs) who allocate cryptocurrency for Liquidity Mining. Lightning Oracles get higher rewards because they provide technical services for the lightning economy interconnected to the digital economy of the Dapp, and ensure the security of the DON, while PWs only hold token within the decentralized financial economy.
+
+## A Simple Architecture Diagram

@@ -57,3 +57,14 @@ In Lightning Oracle, configuration settings are divided into four sections.
 ### Configuration for Lightning Oracle application:
 
 You can provide the following settings.
+      
+      PORT=<Your_Port_Numer>
+
+Example:
+
+      PORT=3001
+      
+The default port number for Lightning Oracle is 3001. If you want to run multiple instances of Lighting Oracle, change the port number and start the application one by one.
+
+### Configuration of Bitcoin Nodes
+

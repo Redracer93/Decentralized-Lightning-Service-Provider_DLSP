@@ -128,4 +128,6 @@ NB: Your LND configurations must match with the Lightning Node that you have ver
 ### Running Lightning Oracle 	
 
 **Linux:**
+
 Before running the Lightning Oracle binary, you must export the .env environment variables. You can use the script below.
+

@@ -31,3 +31,15 @@ The following prerequisites and requirements must be satisfied in order to insta
       3. Ethereum Blockchain
             You can use your own or report RPC providers like Alchemy or Infura.
             For more details: https://docs.alchemy.com/alchemy/ or https://infura.io/docs 
+            
+## Installing, configuring, and running the Lightning Oracle application
+
+We provide binary files for installing the Lightning Oracle Service on Windows and Linux computers.
+You can download the latest source release for Windows and Linux Operating System from here: https://github.com/PlennyPL2/Lightning_Oracle/releases
+
+### Installation Steps
+
+      1. Download the latest source release with respect to your Operating System from here: https://github.com/PlennyPL2/Lightning_Oracle/releases
+      2. Unzip the source file.
+      3. Configure the .env file with your required parameters.
+      4. Execute the Lightning Oracle binary.

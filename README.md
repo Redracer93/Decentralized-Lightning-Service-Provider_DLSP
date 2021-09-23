@@ -48,3 +48,7 @@ You can download the latest source release for Windows and Linux Operating Syste
 
 The default environment variable file named .env which is placed in the project directory. The following syntax rule applied to the .env file.
 
+* VAR=VAL
+* Line beginning with “#” are processed as comments and ignored.
+* Blank Lines are
+In Lightning Oracle, configuration settings are divided into four sections.

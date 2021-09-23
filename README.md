@@ -131,3 +131,10 @@ NB: Your LND configurations must match with the Lightning Node that you have ver
 
 Before running the Lightning Oracle binary, you must export the .env environment variables. You can use the script below.
 
+      export $(grep -v '^#' .env | xargs)
+      
+After that you can execute the binary.
+
+      root@9862fe3ba05c:~/PlennyOracle_Linux_x86_64# ls -la
+PlennyOracle build .env node_modules rpc.proto server
+      root@9862fe3ba05c:~/PlennyOracle_Linux_x86_64# ./PlennyOracle

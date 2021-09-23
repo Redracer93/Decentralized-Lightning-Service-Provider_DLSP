@@ -68,3 +68,64 @@ The default port number for Lightning Oracle is 3001. If you want to run multipl
 
 ### Configuration of Bitcoin Nodes
 
+The environment variables listed below are used to configure your Bitcoin node.
+
+      BTC_HOST=<Your_Bitcoin_Host_Address>
+      BTC_PORT=<Your_Bitcoin_node_RPCPort>
+      BTC_USERNAME=<Your_Bitcoin_node_Username>
+      BTC_PASSWORD=<Your_Bitcoin_node_Password>
+      BTC_VERSION=<Your_Bitcoin_daemon_Version>
+      BTC_NETWORK=<Your_Bitcoin_daemon_Network>
+      
+Example:
+
+      BTC_HOST=192.168.0.1
+      BTC_PORT=8332
+      BTC_USERNAME=bitcoinrpc
+      BTC_PASSWORD=mystrongpassword
+      BTC_VERSION=0.21.0
+      BTC_NETWORK=mainnet
+      
+### Configuration of Ethereum blockchain
+
+The environment variables listed below are used to configure your Ethereum blockchain access point.
+
+      LOCAL_RPC_URL= <your_Ethereum_remote_RPC_endpoint>
+      SOCKET_RPC_URL=<Your_Ethereum_remote_RPC_WebSocket_endpoint>
+      ETH_PRIV_KEY=<Your_Ethereum_Private_Key_to_Address>
+      
+Example:
+
+      LOCAL_RPC_URL=https://arb-rinkeby.g.alchemy.com/v2/xxxx
+      SOCKET_RPC_URL=wss://arb-rinkeby.g.alchemy.com/v2/xxxx
+      ETH_PRIV_KEY=4xxxx
+      
+NB: Your Ethereum private key must match with the account that you are using on the Plenny Dapp!
+
+### Configuration of LND Node
+
+The environment variables listed below are used to configure your LND node.
+
+      LND_ADMIN_MACAROON_HEX=<HEX_Value_of_admin_macaroon>
+      LND_TLS_CERT_HEX=<HEX_Value_of_TLS_certificate>
+      LND_WALLET_PASS=<Your_LND_Wallet_Password>
+      LND_HOST_PORT=<Your_LND_RPC_Port_Number>
+      
+NB: You can find your HEX value using the following command.
+
+      xxd -p -c2000 admin.macaroon
+      xxd -p -c2000 tls.cert
+      
+Example:
+
+      LND_ADMIN_MACAROON_HEX=02010a108c7f2646a692c3d592f3c31b30a108c7f2646a692c3d592f3c31b3
+      LND_TLS_CERT_HEX=2d2d2d20a4d4949434954430a4d49494349544354430a4d494943454430a4d4949454430a4d4949434
+      LND_WALLET_PASS=mylndpassword
+      LND_HOST_PORT=192.168.0.1:10009
+      
+NB: Your LND configurations must match with the Lightning Node that you have verified on the Plenny Dapp!
+
+### Running Lightning Oracle 	
+
+**Linux:**
+Before running the Lightning Oracle binary, you must export the .env environment variables. You can use the script below.

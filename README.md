@@ -40,7 +40,11 @@ You can download the latest source release for Windows and Linux Operating Syste
 ### Installation Steps
 
       1. Download the latest source release with respect to your Operating 
-         [System from here:](https://github.com/PlennyPL2/Lightning_Oracle/releases)
+         System from here: *[https://github.com/PlennyPL2/Lightning_Oracle/releases](https://github.com/PlennyPL2/Lightning_Oracle/releases)* 
       2. Unzip the source file.
       3. Configure the .env file with your required parameters.
       4. Execute the Lightning Oracle binary.
+### Common Settings
+
+The default environment variable file named .env which is placed in the project directory. The following syntax rule applied to the .env file.
+

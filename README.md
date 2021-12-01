@@ -56,6 +56,9 @@ The default environment variable file named .env which is placed in the project 
 
 In Lightning Oracle, configuration settings are divided into four sections.
 
+### ETH_Wallet Setting
+The ETH_Wallet that is used from the DLSP should NOT be used for any other transactions (e.g on DEXes or other Dapps) to avoid nonce errors.
+
 ### Configuration for Lightning Oracle application:
 
 You can provide the following settings.

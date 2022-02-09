@@ -135,6 +135,7 @@ NB: Your LND configurations must match with the Lightning Node that you have ver
 ### Configuration for restarting the Application
 
 The environment variable listed below are used to restart the DLSP application.
+Restart option is provided, so the user can set the interval on how many seconds/minutes/hours the oracle application should be restarted - Just in case the application has stopped working due to some issue.
 
       ALLOW_AUTO_RESTART=true/false
       RESTART_INTERVAL_SECONDS=Your_restart_interval_seconds

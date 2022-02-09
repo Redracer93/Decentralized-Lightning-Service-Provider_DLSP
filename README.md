@@ -58,7 +58,7 @@ The default environment variable file named .env which is placed in the project 
 * Line beginning with “#” are processed as comments and ignored.
 * Blank Lines are ignored.
 
-In Lightning Oracle, configuration settings are divided into four sections.
+In Lightning Oracle, configuration settings are divided into Five sections.
 
 
 ### Configuration for Lightning Oracle application:

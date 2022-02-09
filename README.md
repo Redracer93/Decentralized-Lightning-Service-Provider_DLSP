@@ -132,6 +132,20 @@ Example:
       
 NB: Your LND configurations must match with the Lightning Node that you have verified on the Plenny Dapp!
 
+### Configuration for restarting the Application
+
+The environment variable listed below are used to restart the DLSP application.
+
+      ALLOW_AUTO_RESTART=true/false
+      RESTART_INTERVAL_SECONDS=Your_restart_interval_seconds
+      AVERAGE_DAILY_BLOCK_COUNT=Your_average_daily_block_count
+
+Example:
+
+      ALLOW_AUTO_RESTART=true
+      RESTART_INTERVAL_SECONDS=3600
+      AVERAGE_DAILY_BLOCK_COUNT=6500  
+
 ### Running Lightning Oracle 	
 
 **Linux:**

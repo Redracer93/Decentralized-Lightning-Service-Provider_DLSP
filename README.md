@@ -33,7 +33,14 @@ The following prerequisites and requirements must be satisfied in order to insta
       3. Ethereum Blockchain
             You can use your own or report RPC providers like Alchemy or Infura.
             For more details: https://docs.alchemy.com/alchemy/ or https://infura.io/docs 
-            
+      4. SSL certificate (Self-signed/Trusted)
+            We recommend to use a CA-signed certificate. However, a self-signed certificate will do just fine.
+            To generate a self-signed certificate, run the following commands in your shell.
+                  #openssl genrsa -out key.pem
+	            #openssl req -new -key key.pem -out csr.pem
+	            #openssl x509 -req -days 9999 -in csr.pem -signkey key.pem -out cert.pem
+            You need to update your pem files in server/certificates location
+                       
 ## Installing, configuring, and running the Lightning Oracle application
 
 We provide binary files for installing the Lightning Oracle Service on Windows and Linux computers.
@@ -45,7 +52,9 @@ You can download the latest source release for Windows and Linux Operating Syste
          System from here: https://github.com/PlennyPL2/Lightning_Oracle/releases 
       2. Unzip the source file.
       3. Configure the .env file with your required parameters.
-      4. Execute the Lightning Oracle binary.
+      4. Upload your ssl certificates into server/certificates location
+      5. Run "npm install"
+      6. Execute the Lightning Oracle binary.
       
 ### ETH_Wallet Setting
 The ETH_Wallet that is used from the DLSP should NOT be used for any other transactions (e.g on DEXes or other Dapps) to avoid nonce errors.

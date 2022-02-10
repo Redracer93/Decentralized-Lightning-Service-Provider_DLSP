@@ -37,8 +37,8 @@ The following prerequisites and requirements must be satisfied in order to insta
             We recommend to use a CA-signed certificate. However, a self-signed certificate will do just fine.
             To generate a self-signed certificate, run the following commands in your shell.
                   #openssl genrsa -out key.pem
-	            #openssl req -new -key key.pem -out csr.pem
-	            #openssl x509 -req -days 9999 -in csr.pem -signkey key.pem -out cert.pem
+	          #openssl req -new -key key.pem -out csr.pem
+	          #openssl x509 -req -days 9999 -in csr.pem -signkey key.pem -out cert.pem
             You need to update your pem files in server/certificates location
                        
 ## Installing, configuring, and running the Lightning Oracle application

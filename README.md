@@ -49,7 +49,7 @@ You can download the latest source release for Windows and Linux Operating Syste
 ### Installation Steps
 
       1. Download the latest source release with respect to your Operating 
-         System from here: https://github.com/PlennyPL2/Lightning_Oracle/releases 
+         System from here: https://github.com/PlennyPL2/Decentralized-Lightning-Service-Provider_DLSP/releases 
       2. Unzip the source file.
       3. Configure the .env file with your required parameters.
       4. Upload your ssl certificates into server/certificates location

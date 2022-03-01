@@ -164,10 +164,15 @@ Before running the Lightning Oracle binary, you must export the .env environment
 
       export $(grep -v '^#' .env | xargs)
       
-After that you can execute the binary.
+First way to execute the binary.
 
-       ./PlennyOracle
+       ./PlennyDLSP
       
+Second way to execute the binary.
+Fill in the fields in the run.sh file, and run the following commands in your shell:
+
+	./run.sh
+	
 **Windows:**
 
 Execute the PlennyOracle.exe file and this will up and run a Lightning Oracle service.

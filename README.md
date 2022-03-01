@@ -169,7 +169,7 @@ First way to execute the binary.
        ./PlennyDLSP
       
 Second way to execute the binary.
-Fill in the fields in the run.sh file, and run the following commands in your shell:
+Fill in the fields in the run.sh file, and run the following command in your shell:
 
 	./run.sh
 	

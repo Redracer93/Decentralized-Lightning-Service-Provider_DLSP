@@ -166,7 +166,7 @@ Before running the Lightning Oracle binary, you must export the .env environment
       
 First way to execute the binary.
 
-       ./PlennyDLSP
+	./PlennyDLSP
       
 Second way to execute the binary.
 Fill in the fields in the run.sh file, and run the following command in your shell:

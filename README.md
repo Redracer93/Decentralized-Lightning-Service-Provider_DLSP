@@ -175,7 +175,7 @@ Fill in the fields in the run.sh file, and run the following commands in your sh
 	
 **Windows:**
 
-Execute the PlennyOracle.exe file and this will up and run a Lightning Oracle service.
+Execute the PlennyDLSP.exe file and this will up and run a Lightning Oracle service.
 
 ### Firewall Settings
 

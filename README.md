@@ -72,10 +72,13 @@ The ETH_Wallet that is used from the DLSP should NOT be used for any other trans
 ### 4.3  Port number configuration of DLSP
 
 You can provide the following settings.
+
 	PORT=<Your_Port_Numer>
 	
 Example:
+
 	PORT=3001
+	
 The default port number for the DLSP application is 3001. If you want to run multiple instances of DLSP, change the port number and start the application one by one.
 
 ### 4.4  Configuration of the DLSP environment file
@@ -88,7 +91,9 @@ The default environment variable file named “.env” which is placed in the pr
 In DLSP, configuration settings are divided into Four sections.
 
 
+#### 4.4.1 Bitcoin Node configuration
 
+The environment variables listed below are used to configure your Bitcoin node.
 
 
 

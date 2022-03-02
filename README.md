@@ -42,11 +42,11 @@ The following prerequisites and requirements must be satisfied in order to insta
 	3. Ethereum Blockchain
 		You can use your own or report RPC providers like Alchemy or Infura.
 		For more details: https://docs.alchemy.com/alchemy/ or https://infura.io/docs
-    	4. SSL certificate (Self-signed/Trusted)
+	4. SSL certificate (Self-signed/Trusted)
 		We recommend to use a CA-signed certificate. However, a self-signed certificate will do just fine.
 		To generate a self-signed certificate, run the following commands in your shell.
 			#openssl genrsa -out key.pem
-    			#openssl req -new -key key.pem -out csr.pem
+			#openssl req -new -key key.pem -out csr.pem
 			#openssl x509 -req -days 9999 -in csr.pem -signkey key.pem -out cert.pem
 		You need to update your pem files in server/certificates location.
 

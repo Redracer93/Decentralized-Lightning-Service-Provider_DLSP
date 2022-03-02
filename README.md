@@ -81,9 +81,10 @@ The default port number for the DLSP application is 3001. If you want to run mul
 ### 4.4  Configuration of the DLSP environment file
 
 The default environment variable file named “.env” which is placed in the project directory. The following syntax rule applied to the .env file.
-* VAR=VAL
-* Line beginning with “#” are processed as comments and ignored.
-* Blank Lines are ignored.
+- VAR=VAL
+- Line beginning with “#” are processed as comments and ignored.
+- Blank Lines are ignored.
+
 In DLSP, configuration settings are divided into Four sections.
 
 

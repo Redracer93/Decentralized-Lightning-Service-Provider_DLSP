@@ -1,4 +1,4 @@
-# Lightning_Oracle
+# Decentralized Lightning Service Provider, DLSP
 <br/>
 <p align="center">
 <a href="https://plenny.link" target="_blank">

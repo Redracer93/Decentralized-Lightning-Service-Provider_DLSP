@@ -208,6 +208,7 @@ Here are the steps describe how to claim a Lightning node on your Dapp:
 **Step1: Plenny Dapp Lightning Node Page**
 
 Go to dplenny.crypto/#/verify-lightning-nodes
+
 Click "Claim Lightning Node"
 
 ![image](https://user-images.githubusercontent.com/66779466/156413259-dc9c1314-da94-40e7-b699-50a0ad61292f.png)
@@ -215,7 +216,9 @@ Click "Claim Lightning Node"
 **Step2: Claim your Lightning Node**
 
 Insert Your Lightning Node Public Key
+
 Select Validator Lightning Node from the table below
+
 Click “Add” and confirm the transaction (Ethereum wallet)
 
 ![image](https://user-images.githubusercontent.com/66779466/156413396-fd2a3908-5bbf-4bac-8e6f-e941dc005cdd.png)

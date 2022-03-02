@@ -65,6 +65,26 @@ You can download the latest source release for Windows and Linux from here: http
 	5. Run "npm install"
 	6. Execute the DLSP binary.
 
+### 4.2  ETH_Wallet Settings
+
+The ETH_Wallet that is used from the DLSP should NOT be used for any other transactions (e.g on DEXes or other Dapps) to avoid nonce errors.
+
+### 4.3  Port number configuration of DLSP
+
+You can provide the following settings.
+	PORT=<Your_Port_Numer>
+	
+Example:
+	PORT=3001
+The default port number for the DLSP application is 3001. If you want to run multiple instances of DLSP, change the port number and start the application one by one.
+
+### 4.4  Configuration of the DLSP environment file
+
+The default environment variable file named “.env” which is placed in the project directory. The following syntax rule applied to the .env file.
+* VAR=VAL
+* Line beginning with “#” are processed as comments and ignored.
+* Blank Lines are ignored.
+In DLSP, configuration settings are divided into Four sections.
 
 
 

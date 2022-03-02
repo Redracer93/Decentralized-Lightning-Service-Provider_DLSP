@@ -28,6 +28,32 @@ Liquidity Makers (LM) act as DLSPs providing non-custodial inbound capacity. Thi
 
 ## 2 Plenny DLSP Architecture Diagram
 
+![image](https://user-images.githubusercontent.com/66779466/156386547-18aed706-c834-4afe-b611-9c7b06aec372.png)
+
+
+## 3 Prerequisite For - DLSP
+
+The following prerequisites and requirements must be satisfied in order to install and run a DLSP successfully. The service will not proceed/run until all prerequisites are set up.
+
+	1. Bitcoin Daemon Node (BTC)
+		For more details: https://github.com/bitcoin/bitcoin
+	2. Lightning Network Daemon (LND)
+		For more details: https://github.com/lightningnetwork/lnd
+	3. Ethereum Blockchain
+		You can use your own or report RPC providers like Alchemy or Infura.
+		For more details: https://docs.alchemy.com/alchemy/ or https://infura.io/docs
+    	4. SSL certificate (Self-signed/Trusted)
+		We recommend to use a CA-signed certificate. However, a self-signed certificate will do just fine.
+		To generate a self-signed certificate, run the following commands in your shell.
+			#openssl genrsa -out key.pem
+    			#openssl req -new -key key.pem -out csr.pem
+			#openssl x509 -req -days 9999 -in csr.pem -signkey key.pem -out cert.pem
+		You need to update your pem files in server/certificates location.
+
+## 4 Installing, configuring, and running DLSP
+
+
+
 
 
 

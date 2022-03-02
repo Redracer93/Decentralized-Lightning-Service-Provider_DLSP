@@ -52,6 +52,21 @@ The following prerequisites and requirements must be satisfied in order to insta
 
 ## 4 Installing, configuring, and running DLSP
 
+We provide binary files for installing the DLSP on Windows and Linux operating systems.
+
+You can download the latest source release for Windows and Linux from here: https://github.com/PlennyPL2/Decentralized-Lightning-Service-Provider_DLSP/releases/
+
+### 4.1 Installation Steps
+
+	1. Download the latest source release with respect to your Operating System from here: https://github.com/PlennyPL2/Decentralized-Lightning-Service-Provider_DLSP/releases/
+	2. Unzip the source file.
+	3. Configure the .env file with your required parameters, which are explained in the next section.
+	4. Upload your ssl certificates into server/certificates location
+	5. Run "npm install"
+	6. Execute the DLSP binary.
+
+
+
 
 
 

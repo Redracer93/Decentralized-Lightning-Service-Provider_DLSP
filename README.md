@@ -7,7 +7,8 @@
 </p>
 <br/>
 
-###Manual for lightning nodes to configure Lightning Oracles and Liquidity Makers
+### Manual for lightning nodes to configure Lightning Oracles and Liquidity Makers
+<br/>
 
 ## Overview
 <br/>

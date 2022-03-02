@@ -7,6 +7,8 @@
 </p>
 <br/>
 
+###Manual for lightning nodes to configure Lightning Oracles and Liquidity Makers
+
 ## Overview
 <br/>
 Lightning Oracles serve as a chain link to connect lightning nodes to the Dapp. In the broadest sense, these proprietary oracles work like lighthouses highlighting key data of payment channels and allowing for navigation across chains. They record payment channel capacity while optionally providing data privacy.

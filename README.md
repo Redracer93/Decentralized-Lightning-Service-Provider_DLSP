@@ -95,6 +95,98 @@ In DLSP, configuration settings are divided into Four sections.
 
 The environment variables listed below are used to configure your Bitcoin node.
 
+	BTC_HOST=<Your_Bitcoin_Host_Address>
+	BTC_PORT=<Your_Bitcoin_node_RPCPort>
+	BTC_USERNAME=<Your_Bitcoin_node_Username>
+	BTC_PASSWORD=<Your_Bitcoin_node_Password>
+	BTC_VERSION=<Your_Bitcoin_daemon_Version>
+	BTC_NETWORK=<Your_Bitcoin_daemon_Network>
+	
+Example:
+
+	BTC_HOST=192.168.0.1
+	BTC_PORT=8332
+	BTC_USERNAME=bitcoinrpc
+	BTC_PASSWORD=mystrongpassword
+	BTC_VERSION=0.21.0
+	BTC_NETWORK=mainnet
+	
+#### 4.4.2 Ethereum RPC and Wallet configuration
+
+The environment variables listed below are used to configure your Ethereum blockchain access point.
+
+	LOCAL_RPC_URL= <your_Ethereum_remote_RPC_endpoint>
+	SOCKET_RPC_URL=<Your_Ethereum_remote_RPC_WebSocket_endpoint>
+	ETH_PRIV_KEY=<Your_Ethereum_Wallet_Private_Key_to_Address>
+	
+Example:
+
+	LOCAL_RPC_URL=https://arb-rinkeby.g.alchemy.com/v2/xxxx
+	SOCKET_RPC_URL=wss://arb-rinkeby.g.alchemy.com/v2/xxxx
+	ETH_PRIV_KEY=4xxxx
+	
+NB: Your Ethereum private key must match with the account that you are using on the 
+Plenny Dapp.
+NB: The ETH_Wallet that is used from the DLSP should NOT be used for any other transactions (e.g on DEXes or other Dapps) to avoid nonce errors.
+
+#### 4.4.3  LND Node configuration
+
+The environment variables listed below are used to configure your LND node.
+
+	LND_ADMIN_MACAROON_HEX=<HEX_Value_of_admin_macaroon>
+	LND_TLS_CERT_HEX=<HEX_Value_of_TLS_certificate>
+	LND_WALLET_PASS=<Your_LND_Wallet_Password>
+	LND_HOST_PORT=<Your_LND_RPC_Port_Number>
+	
+NB: You can find your HEX value using the following command.
+
+	xxd -p -c2000 admin.macaroon
+	xxd -p -c2000 tls.cert
+	
+Example:
+
+	LND_ADMIN_MACAROON_HEX=02010a108c7f2646a692c3d592f3c31b30a108c7f2646a692c3d592f3c31b3
+	LND_TLS_CERT_HEX=2d2d2d20a4d4949434954430a4d49494349544354430a4d494943454430a4d4949454430a4d4949434
+	LND_WALLET_PASS=mylndpassword
+	LND_HOST_PORT=192.168.0.1:10009
+	
+#### 4.4.4  Configuration for restarting the Application
+
+The environment variable listed below are used to restart the DLSP application. Restart option is provided, so the user can set the interval on how many seconds/minutes/hours the PlennyDLSP application should be restarted - Just in case the application has stopped working due to some issue.
+
+	ALLOW_AUTO_RESTART=true/false
+	RESTART_INTERVAL_SECONDS=Your_restart_interval_seconds
+	AVERAGE_DAILY_BLOCK_COUNT=Your_average_daily_block_count
+	
+Example:
+
+  	ALLOW_AUTO_RESTART=true
+  	RESTART_INTERVAL_SECONDS=3600
+  	AVERAGE_DAILY_BLOCK_COUNT=6500
+	
+### 4.5  Running DLSP
+
+**Windows:**
+
+Execute the PlennyDLSP.exe file and this will up and run a DLSP service.
+
+**Linux:**
+Before running the DLSP binary, you must export the .env environment variables. You can use the script below.
+
+	export $(grep -v '^#' .env | xargs)
+	
+_First way to execute the binary_
+
+	./PlennyDLSP
+	
+_Second way to execute the binary_
+
+Fill in the fields in the run.sh file, and run the following command in your shell:
+
+	./run.sh
+	
+
+
 
 
 

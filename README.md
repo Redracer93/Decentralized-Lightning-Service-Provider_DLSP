@@ -171,6 +171,7 @@ Example:
 Execute the PlennyDLSP.exe file and this will up and run a DLSP service.
 
 **Linux:**
+
 Before running the DLSP binary, you must export the .env environment variables. You can use the script below.
 
 	export $(grep -v '^#' .env | xargs)
@@ -185,10 +186,24 @@ Fill in the fields in the run.sh file, and run the following command in your she
 
 	./run.sh
 	
+## 5 Firewall Settings
 
+To ensure high security, we ask that you open HTTPS 443 and Lightning Network Daemon (lnd) port 9735 to the public internet. For reference firewall settings, please see our DLSP simple architecture diagram.
 
+## 6 Secure DLSP endpoint with HTTPS
 
+DLSP application is reachable over HTTPS for secure communication. If you don't have an SSL certificate installed for the DLSP application, you'll have to use HTTP to access it. As a result, all standard web browsers will reject this access and classify it as "unsafe,". Moreover, Plenny Dapp will receive an error and respond accordingly. This issue is classified as "Mixed Content Warnings" over the web browser.
 
+Make sure your endpoint for the DLSP is accessible through HTTPS to avoid this issue. You can use commercial or free SSL certificates. The SSL configurations listed below can be used:
+
+- Dockerised solution using docker-compose [nginx server with Let’s Encrypt] https://letsencrypt.org/
+- Cloud load balancer with Cloud provider's SSL [For cloud-hosted Decentralized Oracle Network]
+- Using a Proxy webserver [Examples : HAProxy, Nginx]
+https://www.haproxy.org/ ; https://www.nginx.com/ 
+
+## 7 Claiming Lightning Node
+
+Here are the steps describe how to claim a Lightning node on your Dapp:
 
 
 

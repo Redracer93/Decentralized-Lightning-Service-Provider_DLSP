@@ -224,7 +224,15 @@ Click “Add” and confirm the transaction (Ethereum wallet)
 ![image](https://user-images.githubusercontent.com/66779466/156413396-fd2a3908-5bbf-4bac-8e6f-e941dc005cdd.png)
 
 
+**Step3: Verify your Lightning Node**
 
+You should open a channel with the given channel capacity to the given node on the Lightning Network.
+
+Click "Add Channel"
+
+![image](https://user-images.githubusercontent.com/66779466/156419627-2e0fef8f-a9ab-4f16-b7dc-4f961a5ce5fd.png)
+
+**Step4:  Add Channel**
 
 
 

@@ -10,6 +10,29 @@
 ### Manual for lightning nodes to configure Lightning Oracles and Liquidity Makers
 <br/>
 
+## 1 Introduction
+
+Plenny DLSP (Decentralized Lightning Service Provider) refers to the multifunctional open-source software for providing the decentralized lightning services of the Plenny Dapp and the Decentralized Oracle Network (DON) in order to process transaction data off-chain. This add-on module for lightning nodes supports both, Lightning Oracles and Liquidity Makers.
+
+Lightning Oracles and Liquidity Makers download the same open-source software to operate as Plenny DLSPs. This specifically designed add-on module supports the computation of data off-chain for the provision of services over the DON and the capacity market on the Dapp. For integration, participants install an executable application on their lightning node. Depending on the configuration of the environment variables of the operating system, the service level and user type are recognized when connecting with Plenny. Participating in the DON to operate as an oracle validator is permission-less, as is the participation in the capacity market to operate as a Liquidity Maker. Any lightning node can run a Plenny DLSP. 
+
+Participating lightning nodes operating as Plenny DLSP improve economics for potential fee income in Satoshi (sat) while earning additional income in Plenny (PL2) over DeFi. Operating as a Plenny DLSP involves the use of both, sat and PL2.
+
+### 1.1 Lightning Oracle
+
+Simply put, Lightning Oracles validate and observe payment channels activity. This component ensures connectivity and liquidity when lightning nodes interact with the Bitcoin Lightning Network and Plenny. In the broadest sense, these specific oracles work like lighthouses highlighting transaction data of payment channels allowing Plenny to safely navigate through the ecosystem across chains.  As for data protection and privacy, this is ensured between the participants on a P2P basis.
+
+### 1.2 Liquidity Maker
+
+Liquidity Makers (LM) act as DLSPs providing non-custodial inbound capacity. This role enables lightning nodes to participate in the capacity market while acting independently on the LN. LMs earn royalties for licensing transaction data services via payment communication channels on the one hand, and receive rewards from Plenny on the other. Rewards are given for operating lightning nodes, providing channel capacity to other lightning nodes, and for participating in the network. In the process, LMs transact with LTs directly using both, sat and PL2. Participating in the capacity market and operating as an LM is permission-less. Liquidity Makers utilize a specifically designed add-on module that supports processing data off-chain. This feature enables Lightning Nodes to participate in Plenny's capacity market as so-called DLSP and at the same time to operate independently via the LN. For integration, lightning nodes install an executable application to run the pre-configured software on their device. Any lightning node can download the open-source software and connect. Participating in the capacity market and operating as an LM is permission-less.
+
+## 2 Plenny DLSP Architecture Diagram
+
+
+
+
+
+
 ## Overview
 <br/>
 Lightning Oracles serve as a chain link to connect lightning nodes to the Dapp. In the broadest sense, these proprietary oracles work like lighthouses highlighting key data of payment channels and allowing for navigation across chains. They record payment channel capacity while optionally providing data privacy.

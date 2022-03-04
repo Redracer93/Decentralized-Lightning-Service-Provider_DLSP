@@ -259,9 +259,10 @@ Once your Lightning Node is verified you can move on with the following steps.
 ### 8.1 Launch Lightning Oracle
 
 	1. Go to dplenny.crypto/#/lightning-oracle 
-	2. Stake the Oracle Threshold in PL2 on your Staking Balance. If you don’t have any PL2, buy first.
+	2. Lock the Oracle Threshold in PL2 on your Locked Balance. If you don’t have any PL2, buy first. 
 	
-![image](https://user-images.githubusercontent.com/66779466/156558106-25486b93-db6a-4968-8381-f504b8072b64.png)
+![image](https://user-images.githubusercontent.com/66779466/156748913-189d589b-0bc1-48de-9a11-ee5f48d9619b.png)
+
 
 	3. Click on “Launch Oracle”
 	4. Add the details and save.

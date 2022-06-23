@@ -81,7 +81,9 @@ Part I – Technical Implementation
 
     - [3.3.6 Logging Configuration ](#336-Logging-Configuration)
 
-    - [3.3.7 Configuration Summary ](#337-Configuration-Summary)
+    - [3.3.7 RPC Request Configuration](#337-RPC-Request-Configuration)
+
+    - [3.3.8 Configuration Summary ](#338-Configuration-Summary)
 
   - [3.4 System & Network Security ](#34-System--Network-Security)
 
@@ -471,7 +473,32 @@ Resources:
 
 [https://github.com/winstonjs/winston](https://github.com/winstonjs/winston)
 
-### 3.3.7 Configuration Summary
+
+### 3.3.7 RPC Request Configuration
+
+RPC providers limit the response rate. Depending on the account type,users encounter a rate limit response, with the request being repeated automatically after a short delay. This behavior can be configured by setting the following options:
+
+**MAX_RETRIES** = Number of attempts the client will make to resend a rate-limited request before giving up. <br />
+**RETRY_INTERVAL** = Minimum time to wait between consecutive retries, in milliseconds.<br />
+**RETRY_JITTER** = Random amount of time is added to the retry delay to avoid additional rate errors caused by too many concurrent connections, with the number of milliseconds chosen between 0 and this value.<br />
+**CHANNEL_FAILED_ATTEMPTS_LIMIT** = Maximum number of failed attempts before a pending channel is ignored for further processing.<br />
+**DELAY_CHANNEL_PROCESSING** = Minimum time to wait for a channel processing to reduce requests burstiness, and prevent RPC rate limits, in milliseconds.
+
+        MAX_RETRIES=<Number_of_Retries>
+        RETRY_INTERVAL=<Interval_in_Milliseconds>
+        RETRY_JITTER=<Delay_in_Milliseconds>
+        CHANNEL_FAILED_ATTEMPTS_LIMIT=<Number_of_Failed_Attempts>
+        DELAY_CHANNEL_PROCESSING=<Delay_in_Milliseconds>
+
+Example:
+
+        MAX_RETRIES=3
+        RETRY_INTERVAL=1000
+        RETRY_JITTER=250
+        CHANNEL_FAILED_ATTEMPTS_LIMIT=3
+        DELAY_CHANNEL_PROCESSING=250
+
+### 3.3.8 Configuration Summary
 
 Below is a sample ENV file which is used by the DLSP module:
 
@@ -503,6 +530,13 @@ Below is a sample ENV file which is used by the DLSP module:
         
         # DLSP Logging Configuration
         LOG_LEVEL=const levels
+        
+        # RPC Request Configuration
+        MAX_RETRIES=Number_of_Retries
+        RETRY_INTERVAL=Interval_in_Milliseconds
+        RETRY_JITTER=Delay_in_Milliseconds
+        CHANNEL_FAILED_ATTEMPTS_LIMIT=Number_of_Failed_Attempts
+        DELAY_CHANNEL_PROCESSING = Delay_in_Milliseconds
 
 Setup is completed via the Dapp's UI by performing the initial verification. However, the system and network must be configured too.
 

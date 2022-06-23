@@ -175,7 +175,7 @@ Part II – Operational Concept
 
 In general, a Bitcoin Core and a BOLT-compliant Lightning Node are required. BOLT stands for Basis of Lightning Technology. The hardware and software requirements for Lightning Nodes correspond to the standard specifications.
 
-Currently, any Lightning Node compatible with the Lightning Network Daemon (LND) starting from lnd 0.11.1-beta can use the DLSP module V.3.1.2-Beta.
+Currently, any Lightning Node compatible with the Lightning Network Daemon (LND) starting from lnd 0.11.1-beta can use the DLSP module V.3.1.3-Beta.
 
 In addition, an Ethereum wallet (i.e. MetaMask) and an Ethereum Network endpoint that supports Layer 2 (L2), more specifically Arbitrum One, are required.
 

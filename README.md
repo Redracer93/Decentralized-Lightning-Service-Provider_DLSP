@@ -83,7 +83,9 @@ Part I – Technical Implementation
 
     - [3.3.7 RPC Request Configuration](#337-RPC-Request-Configuration)
 
-    - [3.3.8 Configuration Summary ](#338-Configuration-Summary)
+    - [3.3.8 Capacity Market ](#338-Capacity-Market)
+    
+    - [3.3.9 Configuration Summary ](#339-Configuration-Summary)
 
   - [3.4 System & Network Security ](#34-System--Network-Security)
 
@@ -512,7 +514,7 @@ Example:
         MAX_PENDING_OPENING=10
 
 
-### 3.3.8 Configuration Summary
+### 3.3.9 Configuration Summary
 
 Below is a sample ENV file which is used by the DLSP module:
 

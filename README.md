@@ -83,7 +83,7 @@ Part I – Technical Implementation
 
     - [3.3.7 RPC Request Configuration](#337-RPC-Request-Configuration)
 
-    - [3.3.8 Capacity Market Configuration ](#338-Capacity-Market-Configuration)
+    - [3.3.8 Multiple Offers Configuration ](#338-Multiple-Offers-Configuration)
     
     - [3.3.9 Configuration Summary ](#339-Configuration-Summary)
 
@@ -500,9 +500,9 @@ Example:
         CHANNEL_FAILED_ATTEMPTS_LIMIT=3
         DELAY_CHANNEL_PROCESSING=250
         
-### 3.3.8 Capacity Market Configuration
+### 3.3.8 Multiple Offers Configuration
 
-Liquidity Markers can configure the maximum number of channels pending opening and run the DLSP. New inbound requests are not possible once the maximum number of channels pending opening is reached. This behavior can be configured by setting the following options:
+Liquidity Makers can configure the maximum number of channels pending opening and run the DLSP. New inbound requests are not possible once the maximum number of channels pending opening is reached. This behavior can be configured by setting the following options:
 
 **MAX_PENDING_OPENING** = The maximum number of channels that are pending opening. <br />
 
@@ -541,7 +541,7 @@ Below is a sample ENV file which is used by the DLSP module:
         LND_WALLET_PASS=Your_LND_Wallet_Password
         LND_HOST_PORT=Your_LND_RPC_URL:Your_LND_RPC_Port_Number
         
-        # Capacity Market Configuration
+        # Multiple Offers Configuration
         MAX_PENDING_OPENING=10
         
         # Profit Configuration

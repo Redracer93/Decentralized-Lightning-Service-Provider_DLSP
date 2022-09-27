@@ -83,7 +83,7 @@ Part I – Technical Implementation
 
     - [3.3.7 RPC Request Configuration](#337-RPC-Request-Configuration)
 
-    - [3.3.8 Capacity Market ](#338-Capacity-Market)
+    - [3.3.8 Capacity Market Configuration ](#338-Capacity-Market-Configuration)
     
     - [3.3.9 Configuration Summary ](#339-Configuration-Summary)
 
@@ -500,7 +500,7 @@ Example:
         CHANNEL_FAILED_ATTEMPTS_LIMIT=3
         DELAY_CHANNEL_PROCESSING=250
         
-### 3.3.8 Capacity Market
+### 3.3.8 Capacity Market Configuration
 
 Liquidity Markers can configure the maximum number of channels pending opening and run the DLSP. New inbound requests are not possible once the maximum number of channels pending opening is reached. This behavior can be configured by setting the following options:
 

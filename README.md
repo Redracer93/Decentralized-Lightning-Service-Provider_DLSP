@@ -497,6 +497,20 @@ Example:
         RETRY_JITTER=250
         CHANNEL_FAILED_ATTEMPTS_LIMIT=3
         DELAY_CHANNEL_PROCESSING=250
+        
+### 3.3.8 Capacity Market
+
+Liquidity Markers can configure the maximum number of channels pending opening and run the DLSP. New inbound requests are not possible once the maximum number of channels pending opening is reached. This behavior can be configured by setting the following options:
+
+**MAX_PENDING_OPENING** = The maximum number of channels that are pending opening. <br />
+
+        MAX_PENDING_OPENING=<Number_Of_Channels_Pending_Opening>
+
+
+Example:
+
+        MAX_PENDING_OPENING=10
+
 
 ### 3.3.8 Configuration Summary
 
@@ -524,6 +538,9 @@ Below is a sample ENV file which is used by the DLSP module:
         LND_TLS_CERT_HEX=HEX_Value_of_TLS_certificate
         LND_WALLET_PASS=Your_LND_Wallet_Password
         LND_HOST_PORT=Your_LND_RPC_URL:Your_LND_RPC_Port_Number
+        
+        # Capacity Market Configuration
+        MAX_PENDING_OPENING=10
         
         # Profit Configuration
         ALLOW_AUTO_CLOSING_CHANNELS=true/false
